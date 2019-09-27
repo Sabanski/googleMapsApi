@@ -28,6 +28,7 @@ function initMap() {
         if (results[0]) {
           document.getElementById('adress').value =
             results[0].formatted_address;
+            validateAdress(results[0].formatted_address);
         } else {
           window.alert('No results found');
         }
