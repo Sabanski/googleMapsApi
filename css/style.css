@@ -1,0 +1,64 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+.container {
+  width: 80%;
+  margin: 2em auto;
+  padding: 2em;
+  background-color: #f2f2f2;
+  border-radius: 0.3em;
+}
+form {
+  width: 30%;
+  display: inline-block;
+}
+input {
+  width: 100%;
+  padding: 1em;
+  box-sizing: border-box;
+  margin: 1em 0 1em 0;
+  border: 0.1em solid #ccc;
+  border-radius: 0.3em;
+}
+.validInput{
+  border: 0.1em solid #45a049;
+}
+.invalidInput{
+  border: 0.1em solid #ff3322;
+}
+.errorMessage {
+  margin-bottom: 1em;
+  color: #ff3322;
+}
+input[type='submit'] {
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+  border: none;
+  border-radius: 0.3em;
+  box-sizing: border-box;
+}
+
+input[type='submit']:hover {
+  background-color: #45a049;
+}
+#map {
+  display: inline-block;
+  box-sizing: border-box;
+  height: 33em;
+  margin-left: 5em;
+  width: 60%;
+}
+
+@media only screen and (max-width: 1080px) {
+  form{
+    width: 100%;
+  }
+  #map{
+    width: 100%;
+    margin: 2em 0;
+  }
+}

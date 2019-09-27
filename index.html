@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Google Map API Task</title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <h1 id="Heading">Google Map API Task</h1>
+
+
+    <form action="#" id="googleMapForm" novalidate autocomplete="off">
+
+      <label for="name">Name:</label>
+      <input type="text" name="Name" id="name" placeholder="JohnDoe" autofocus onfocusout="validateName()" />
+      <div class="errorMessage"></div>
+
+      <label for="adress">Adress:</label>
+      <input type="text" name="Adress" id="adress" placeholder="123 Main St Anytown,USA"
+        onfocusout="validateAdress()" />
+      <div class="errorMessage"></div>
+
+      <label for="email">Email:</label>
+      <input type="email" name="Email" id="email" placeholder="john.doe@gmail.com" onfocusout="validateEmail()" />
+      <div class="errorMessage"></div>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" name="Phone Number" id="phone" placeholder="+359 897123456" onfocusout="validatePhone()" />
+      <div class="errorMessage"></div>
+
+      <label for="website">Website URL:</label>
+      <input type="url" name="Website" id="website" placeholder="https://johndoe.com/" onfocusout="validateWebsite()" />
+      <div class="errorMessage"></div>
+
+      <input type="submit" />
+    </form>
+
+    <div id="map"></div>
+    <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from<a
+        href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+    </div>
+  </div>
+  <script src="js/app.js"></script>
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBk6WXs7bDmUFxpNp7NB5STy_vYUDoQI_I&libraries=places&callback=initMap"
+    async defer></script>
+</body>
+
+</html>
